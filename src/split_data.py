@@ -22,6 +22,7 @@ def split_and_save(config_path):
     train.to_csv(train_data_path, sep=',', encoding = 'utf-8')
     validation.to_csv(val_data_path, sep=',', encoding = 'utf-8')
 
+
 if __name__ == "__main__":
     args = argparse.ArgumentParser()
     args.add_argument("--config", default="params.yaml")
