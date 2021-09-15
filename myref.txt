@@ -1,0 +1,21 @@
+create requirements.txt
+install reqs
+create template.py to make directories
+make directory for data_given
+import dataset to data_given directory
+git init
+dvc init
+pywin32==228 install
+dvc add data_given\winequality-red.csv
+git add.
+git commit -m "first commit"
+git remote add origin https://github.com/PRADEEP-DScientist/wine_mlops.git
+git branch -M main
+git push origin main
+create params.yaml and dvc.yaml
+make configurations to params.yaml
+git add .
+git commit -m "params added"
+git push origin main
+create get_data.py
+src\get_data.py
