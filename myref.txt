@@ -18,4 +18,16 @@ git add .
 git commit -m "params added"
 git push origin main
 create get_data.py
-src\get_data.py
+echo >> src\get_data.py
+configure the get_data function to obtain dataframe
+git add .
+git commit -m "add get_data.py"
+git push origin main
+echo >> src\load_data.py
+configure load_data to get the dataframe and dump it into data\raw as csv file
+open dvc.yaml
+mention stages for reproduction
+dvc repro--> This command keeps track of any changes made to the dependancies,data or outputs
+git add .
+git commit -m "stage-1"
+git push origin main
