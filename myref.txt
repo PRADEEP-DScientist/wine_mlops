@@ -42,5 +42,7 @@ create tox.ini
 create tests directory and files in it
 create setup.py
 make a package out of the src directory contents
-you can ship it out to a friend by the below commond
+you can ship it out to a friend by the below command
 python setup.py sdist bdist_wheel
+add flake8 to requirements.txt
+this helps us check for pep-8 convention
