@@ -33,3 +33,6 @@ git commit -m "stage-1"
 git push origin main
 create and configure model.py
 create params.json and metrics.json
+update path in params.yaml
+dvc metrics show
+dvc metrics diff
