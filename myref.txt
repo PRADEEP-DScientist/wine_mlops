@@ -36,3 +36,11 @@ create params.json and metrics.json
 update path in params.yaml
 dvc metrics show
 dvc metrics diff
+add pytest and tox to requirements.txt
+install it
+create tox.ini
+create tests directory and files in it
+create setup.py
+make a package out of the src directory contents
+you can ship it out to a friend by the below commond
+python setup.py sdist bdist_wheel
