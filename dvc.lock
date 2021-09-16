@@ -26,9 +26,32 @@ stages:
       md5: b1863132bfe6eec893b4b39cac4c65e9
       size: 678
     outs:
-    - path: data/processed/train_data.csv
+    - path: data\processed\train_data.csv
       md5: 7ab8bc552e618a912bab6c118c952850
       size: 80388
-    - path: data/processed/val_data.csv
+    - path: data\processed\val_data.csv
       md5: 61c8795e355c18440d7bbaae25c0a4fb
       size: 20213
+  train_n_eval:
+    cmd: python src\model.py --config=params.yaml
+    deps:
+    - path: data\processed\train_data.csv
+      md5: 7ab8bc552e618a912bab6c118c952850
+      size: 80388
+    - path: data\processed\val_data.csv
+      md5: 61c8795e355c18440d7bbaae25c0a4fb
+      size: 20213
+    - path: src\model.py
+      md5: 99897780712386e24b881f522f11d0a4
+      size: 2330
+    params:
+      params.yaml:
+        estimators.ElasticNet.params.alpha: 0.88
+        estimators.ElasticNet.params.l1_ratio: 0.89
+    outs:
+    - path: report\params.json
+      md5: 0568f34313ba7c5e55128b75dbcbee5c
+      size: 46
+    - path: report\score.json
+      md5: 0350ec9a6bf4cc394d34d2e7e0c184d2
+      size: 107

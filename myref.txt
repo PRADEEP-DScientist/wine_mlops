@@ -31,3 +31,5 @@ dvc repro--> This command keeps track of any changes made to the dependancies,da
 git add .
 git commit -m "stage-1"
 git push origin main
+create and configure model.py
+create params.json and metrics.json
