@@ -2,7 +2,6 @@ from flask import Flask,render_template,request
 import os
 import yaml
 import joblib
-import numpy as np
 from jsonify.convert import jsonify
 
 params_path = "params.yaml"
